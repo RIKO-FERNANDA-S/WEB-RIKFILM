@@ -12,13 +12,15 @@ import axios from "axios"
 const Trending = () => {
 
   const [movies, setMovies] = useState([])
+  const account = 21;
+
   useEffect(() => {
-    axios.get(`${process.env.REACT_APP_BASE_URL}`, {
+    axios.get(`${process.env.REACT_APP_BASE_URL}/discover/movie`, {
       params: {
          api_key: process.env.REACT_APP_TMDB_KEY
       }
     }).then((res) => {
-      // console.log("inihasilnya ", res.data.results)
+      console.log("inihasilnya ", res.data.results)
       setMovies(res.data.results)
     }).catch(err => {
       console.log(err)
@@ -46,7 +48,7 @@ const Trending = () => {
                 <diV className="p-2 m-1 text-white">
                   <Card.Title className=" text-center">{result.title}</Card.Title>
                   <Card.Text className="text-left">
-                    {result.overview}.slice(50)
+                    {result.overview}
                   </Card.Text>
                   <Card.Text className="text-left">
                     {result.release_date}
