@@ -1,48 +1,189 @@
-.myBG{
-    background-color: rgb(108, 165, 216);
-    background-image: url('../images/bg/main.jpg');
-    background-size: cover;
-    height: 100vh;
+.bgPage {
+  background-color: #222121;
 }
 
-.home{
-    margin-top: 2rem;
-    height: 25rem;
+.myBG {
+  background-image: url("../images/bg/main.jpg");
+  background-size: cover;
+  height: 100vh;
 }
 
-.title{
-    font-size: 3rem;
-    text-align: center;
-    font-weight: 800;
-    line-height: 1;
-    text-shadow: 2px 2px black;
-    letter-spacing: 2px;
+Nav {
+  display: flex;
+  width: 100%;
 }
 
-.trending{
-    background-image: url('../images/bg/scifi.jpg');
-    background-size: cover;
-    height: auto;
+.genre{
+  font-family: "Jura", sans-serif;
 }
 
-.superhero{
-    background-image: url('../images/bg/spiderman.jpg');
-    background-size: cover;
-    height: auto;
+.home {
+  margin-top: 2rem;
+  height: 25rem;
+  width: 37rem;
+  margin-left: 2rem;
+}
+
+.colHome{
+  letter-spacing: 2px;
+}
+
+.title1 {
+  margin-top: 2rem;
+  height: max-content;
+  font-size: 10rem;
+  text-align: start;
+  font-weight: 800;
+  line-height: .7;
+  text-shadow: 2px 2px black;
+  letter-spacing: 2px;
+  font-family: "Jomhuria", serif;
+}
+
+.title1 span {
+  color: #fd2727;
+}
+
+.title2 p{
+ 
+  font-size: 2.5rem;
+  text-align: start;
+  font-weight: 600;
+  line-height: 1;
+  text-shadow: 4px 3px black;
+  font-family: "Mochiy Pop One", sans-serif;
+  letter-spacing: 2px;
+}
+
+.icons {
+  cursor: pointer;
+}
+
+.gradasi {
+  background-image: linear-gradient(to top, #222121, rgba(34, 33, 33, 0));
+  width: 127.6rem;
+  height: 9rem;
+  content: "";
+  position: absolute;
+  bottom: 0;
+}
+
+.containerMotivation{
+  background-image: url("../images/bg/Subtract1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  margin-top: 5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.textMotivation{
+  padding-left: 2rem;
+  text-shadow:
+        -1px -1px 0 #000,  
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+}
+
+.textMotivation h1{
+  font-size: 2.2rem;
+  font-family: "Mochiy Pop One", sans-serif;
+  color: #ffff;
+}
+
+.textMotivation p{
+  font-size: 1.9rem;
+  font-family: "Mochiy Pop One", sans-serif;
+  color: #FD2727;
+}
+
+.imgMotivation img{
+  border: solid white 7px;
+  border-radius: 4px;
+}
+
+.trending {
+  height: auto;
+}
+
+.horizontal-card{
+  content: "";
+  border: solid 2px red;
+}
+
+.superhero {
+  background-image: url("../images/bg/spiderman.jpg");
+  background-size: cover;
+  height: auto;
+}
+
+.MovieWrapper{
+ gap: 2rem;
+ flex-wrap: wrap;
+ display: flex;
+}
+
+.tittle-movie h1{
+  font-family: "Khula", sans-serif;
+  font-weight: 600;
+  font-size: 3rem;
+  color: #fff;
+}
+
+.tittle-movie span{
+  color:#FD2727;
+}
+
+.MovieImage {
+  height: 60rem;
+  background-color: #222121;
+  margin: 5px;
+  padding: 5px;
+}
+
+.title-film{
+  height: 50px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.trandingImage {
+  height: 500px;
+}
+
+.textFilm{
+  font-family: "Jura", sans-serif;
+}
+
+.conFooter{
+  width: 100%;
+  height: 7rem;
+  background-color: #3f3f3f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.conFooter h1{
+  color: #000;
+  font-family: "Miriam Libre", sans-serif;
+  font-size: 2rem;
 }
 
 
-.movieWrapper{
 
-}
 
-.MovieImage{
-    height: auto;
-    background-color: black;
-    margin: 5px;
-    padding: 5px;
-}
-
-.trandingImage{
-    height: 500px;
+@media (max-width: 576px) {
+  .title1 {
+    font-size: 2rem;
+  }
+  .title2 {
+    font-size: 1rem;
+  }
+  .gradasi {
+    width: 50rem;
+  }
 }

@@ -34,7 +34,9 @@ const Trending = () => {
     <div>
       <Container>
         <br/>
-        <h1 className="mt-4 text-white ">TRENDING MOVIES</h1>
+        <div className="tittle-movie ">
+        <h1 className="mt-4 text-center py-5 ">Top Movie <span>2024</span></h1>
+        </div>
         <br/>
         <Row>
 
@@ -42,17 +44,23 @@ const Trending = () => {
   
             return(
                <Col md={4} className="MovieWrapper" id="tranding" key={index}>
-            <Card className=" MovieImage">
+            <Card className=" MovieImage bg-dark border border-5 border-white mb-3">
               <Image src={`${process.env.REACT_APP_IMG_URL}/${result.poster_path}`} alt="tust" className="trandingImage"></Image>
-              <div className="bg-dark">
-                <diV className="p-2 m-1 text-white">
-                  <Card.Title className=" text-center">{result.title}</Card.Title>
+              <div className="">
+                <diV className="textFilm p-2 m-1 text-white">
+                  <Card.Title className="title-film text-center">{result.title}</Card.Title>
+                  <div className=" d-flex justify-content-between mx-3 ">
+                    <div className="rate d-flex gap-2">
+                    <box-icon type='solid' name='star' color="gold"></box-icon>
                   <Card.Text className="text-left">
-                    {result.overview}
+                    {result.vote_average}
                   </Card.Text>
+                    </div>
+                 
                   <Card.Text className="text-left">
                     {result.release_date}
                   </Card.Text>
+                  </div>
                 </diV>
               </div>
             </Card>
